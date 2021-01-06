@@ -8,7 +8,9 @@
     <title>龙谷搜索</title>
     <script src="../static/plugins/jquery/jquery.min.js"></script>
     <script src="../static/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../static/js/modal.js"></script>t
     <script src="../static/js/global.js"></script>
+    <script src="../static/js/search.js"></script>
     <link rel="stylesheet" href="../static/plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../static/plugins/animate/animate.min.css">
     <link rel="stylesheet" href="../static/css/global.css">
@@ -54,21 +56,45 @@
                 <a class="nav-link text-white" href="./aboutus.html">关于本站</a>
             </li>
         </ul>
+        <p class="navbar-text text-white mr-5 h5" style="margin-bottom: 0" id="p-time">当前时间</p>
         <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" id="searchBox" type="search" placeholder="标题搜索" aria-label="Search">
+            <input class="form-control mr-sm-2" id="searchBox" type="search" placeholder="请输入书籍ID" aria-label="Search">
+            <div class="btn-group mr-sm-2">
+                <button type="button" id="drop-search-type" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    搜索类型
+                </button>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item" dropdown-id="1">书籍ID</a>
+                    <a href="#" class="dropdown-item" dropdown-id="2">书籍名称</a>
+                    <a href="#" class="dropdown-item" dropdown-id="3">书籍作者</a>
+                    <a href="#" class="dropdown-item" dropdown-id="4">作者国籍</a>
+                </div>
+            </div>
             <button class="btn btn-info my-2 my-sm-0" type="button" id="search">搜索</button>
-            <button class="btn btn-success my-2 my-sm-0 ml-3" type="button" id="loginRef">登录</button>
+            <button class="btn btn-primary ml-2 my-sm-0" type="button" id="clear">清空</button>
         </form>
     </div>
 </nav>
-
     <div class="absolute-center container">
         <div class="row">
             <div class="col">
-                <ul class="list-group">
-                    <li class="list-group-item text-center header">错误信息</li>
-                    <li class="list-group-item text-center text">该项目尚未建设</li>
-                </ul>
+                <table class="table table-striped table-dark">
+                    <thead>
+                    <tr>
+                        <th scope="col">索引</th>
+                        <th scope="col">书籍ID</th>
+                        <th scope="col">书籍名称</th>
+                        <th scope="col">书籍作者</th>
+                        <th scope="col">作者国籍</th>
+                        <th scope="col">价格</th>
+                        <th scope="col">库存</th>
+                        <th scope="col">详情信息</th>
+                    </tr>
+                    </thead>
+                    <tbody id="stable-body">
+
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>

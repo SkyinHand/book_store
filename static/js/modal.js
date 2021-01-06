@@ -21,12 +21,12 @@
 				  </div>
 				</div>
 			`
-			$(this).append(modal_code)
-			let modal_element = $('#modal_show')
-			modal_element.modal('show')
+			$(this).append(modal_code);
+			let modal_element = $('#modal_show');
+			modal_element.modal('show');
 			modal_element.on('hidden.bs.modal', function (e) {
-				$('#modal_show').remove()
-				after_function()
+				$('#modal_show').remove();
+				after_function();
 			})
 		}
 	})
