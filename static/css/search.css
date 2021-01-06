@@ -1,0 +1,35 @@
+
+/*body {*/
+/*    position:fixed;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    width:100%;*/
+/*    height:100%;*/
+/*    z-index:-10;*/
+/*    zoom: 1;*/
+/*    background-color: #fff;*/
+/*    background: url("../img/background/search_back.jpg") no-repeat;*/
+/*    background-size: cover;*/
+/*    -webkit-background-size: cover;*/
+/*    -o-background-size: cover;*/
+/*    background-position: center 0;*/
+/*}*/
+
+.list-group {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.list-group-item {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255,.525);
+}
+
+.header {
+    font-size: 20px;
+    color: #fff;
+}
+
+.text {
+    font-size: 17px;
+    color: #fff;
+}

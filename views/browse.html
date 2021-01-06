@@ -1,0 +1,2048 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浏览图书</title>
+    <script src="../static/plugins/jquery/jquery.min.js"></script>
+    <script src="../static/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../static/js/global.js"></script>
+    <script src="../static/js/waterfall.js"></script>
+    <link rel="stylesheet" href="../static/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/plugins/animate/animate.min.css">
+    <link rel="stylesheet" href="../static/css/booklist.css">
+    <link rel="stylesheet" href="../static/css/global.css">
+    <link rel="stylesheet" href="../static/css/browser.css">
+    <link rel="stylesheet" href="../static/css/footer.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light animate__animated animate__fadeIn" style="position: relative; z-index: 1500" id="logo-area">
+    <a class="navbar-brand text-white" href="./home.html"><img src="../static/img/other/logo.png" alt="龙谷阅读">龙谷阅读</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto" >
+            <li class="nav-item active">
+                <a class="nav-link text-white" href="./browse.html">浏览图书</a>
+            </li>
+            <li class="nav-item dropdown" >
+                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    图书分类
+                </a>
+                <div class="dropdown-menu animate__animated animate__fadeIn" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">文学艺术</a>
+                    <a class="dropdown-item" href="#">青春文学</a>
+                    <a class="dropdown-item" href="#">励志经典</a>
+                    <a class="dropdown-item" href="#">历史形势</a>
+                    <a class="dropdown-item" href="#">社会科学</a>
+                    <a class="dropdown-item" href="#">旅游文化</a>
+                    <a class="dropdown-item" href="#">美食时尚</a>
+                    <a class="dropdown-item" href="#">少儿科学</a>
+                    <a class="dropdown-item" href="#">时事政治</a>
+                    <a class="dropdown-item" href="#">其他全部</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#">图书排行</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#">图书下载</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="./aboutus.html">关于本站</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" id="searchBox" type="search" placeholder="标题搜索" aria-label="Search">
+            <button class="btn btn-info my-2 my-sm-0" type="button" id="search">搜索</button>
+            <button class="btn btn-success my-2 my-sm-0 ml-3" type="button" id="loginRef">登录</button>
+        </form>
+    </div>
+</nav>
+
+    <div class="main animate__animated animate__fadeInLeft">
+        <div class="main-items">
+            <div class="new-book-list">
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_1.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            散步的侵略者
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [日]前川知大
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_2.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            三十年战争史
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [英] 彼得·威尔逊
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_3.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            六十个故事
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [意] 迪诺·布扎蒂
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_4.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            诗人的思考
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            (美) 海伦·文德勒
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_5.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            项塔兰3
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [澳大利亚]格里高利·大卫·罗伯兹
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_6.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            黑镜
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [英] 查利·布鲁克 / 安娜贝尔·琼斯
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_7.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            抓落叶
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [美]汤米·巴特勒
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_8.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            漫步八十年代
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            老葛
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_9.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            一千亿种生活
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [英] 蕾秋·乔伊斯
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_10.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            电影时代
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [美] 保琳·凯尔
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_1.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            散步的侵略者
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [日]前川知大
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_2.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            三十年战争史
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [英] 彼得·威尔逊
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_3.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            六十个故事
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [意] 迪诺·布扎蒂
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_4.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            诗人的思考
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            (美) 海伦·文德勒
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_5.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            项塔兰3
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [澳大利亚]格里高利·大卫·罗伯兹
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_6.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            黑镜
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [英] 查利·布鲁克 / 安娜贝尔·琼斯
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_7.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            抓落叶
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [美]汤米·巴特勒
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_8.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            漫步八十年代
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            老葛
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_9.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            一千亿种生活
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [英] 蕾秋·乔伊斯
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_10.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            电影时代
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [美] 保琳·凯尔
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_1.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            散步的侵略者
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [日]前川知大
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_2.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            三十年战争史
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [英] 彼得·威尔逊
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_3.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            六十个故事
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [意] 迪诺·布扎蒂
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_4.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            诗人的思考
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            (美) 海伦·文德勒
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_5.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            项塔兰3
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [澳大利亚]格里高利·大卫·罗伯兹
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_6.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            黑镜
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [英] 查利·布鲁克 / 安娜贝尔·琼斯
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_7.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            抓落叶
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [美]汤米·巴特勒
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_8.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            漫步八十年代
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            老葛
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_9.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            一千亿种生活
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [英] 蕾秋·乔伊斯
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_10.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            电影时代
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [美] 保琳·凯尔
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_1.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            散步的侵略者
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [日]前川知大
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_2.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            三十年战争史
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [英] 彼得·威尔逊
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_3.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            六十个故事
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [意] 迪诺·布扎蒂
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_4.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            诗人的思考
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            (美) 海伦·文德勒
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_5.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            项塔兰3
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [澳大利亚]格里高利·大卫·罗伯兹
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_6.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            黑镜
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [英] 查利·布鲁克 / 安娜贝尔·琼斯
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_7.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            抓落叶
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [美]汤米·巴特勒
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_8.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            漫步八十年代
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            老葛
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_9.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            一千亿种生活
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [英] 蕾秋·乔伊斯
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_10.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            电影时代
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [美] 保琳·凯尔
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_1.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            散步的侵略者
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [日]前川知大
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_2.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            三十年战争史
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [英] 彼得·威尔逊
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_3.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            六十个故事
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [意] 迪诺·布扎蒂
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_4.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            诗人的思考
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            (美) 海伦·文德勒
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_5.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            项塔兰3
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [澳大利亚]格里高利·大卫·罗伯兹
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_6.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            黑镜
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [英] 查利·布鲁克 / 安娜贝尔·琼斯
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_7.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            抓落叶
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [美]汤米·巴特勒
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_8.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            漫步八十年代
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            老葛
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_9.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            一千亿种生活
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [英] 蕾秋·乔伊斯
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_10.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            电影时代
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [美] 保琳·凯尔
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_1.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            散步的侵略者
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [日]前川知大
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_2.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            三十年战争史
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [英] 彼得·威尔逊
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_3.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            六十个故事
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [意] 迪诺·布扎蒂
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_4.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            诗人的思考
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            (美) 海伦·文德勒
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_5.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            项塔兰3
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [澳大利亚]格里高利·大卫·罗伯兹
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_6.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            黑镜
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [英] 查利·布鲁克 / 安娜贝尔·琼斯
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_7.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            抓落叶
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [美]汤米·巴特勒
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_8.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            漫步八十年代
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            老葛
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_9.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            一千亿种生活
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [英] 蕾秋·乔伊斯
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_10.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            电影时代
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [美] 保琳·凯尔
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_1.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            散步的侵略者
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [日]前川知大
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_2.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            三十年战争史
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [英] 彼得·威尔逊
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_3.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            六十个故事
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [意] 迪诺·布扎蒂
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_4.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            诗人的思考
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            (美) 海伦·文德勒
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_5.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            项塔兰3
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [澳大利亚]格里高利·大卫·罗伯兹
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_6.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            黑镜
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [英] 查利·布鲁克 / 安娜贝尔·琼斯
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_7.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            抓落叶
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [美]汤米·巴特勒
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_8.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            漫步八十年代
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            老葛
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_9.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            一千亿种生活
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [英] 蕾秋·乔伊斯
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_10.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            电影时代
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [美] 保琳·凯尔
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_1.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            散步的侵略者
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [日]前川知大
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_2.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            三十年战争史
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [英] 彼得·威尔逊
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_3.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            六十个故事
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [意] 迪诺·布扎蒂
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_4.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            诗人的思考
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            (美) 海伦·文德勒
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_5.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            项塔兰3
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [澳大利亚]格里高利·大卫·罗伯兹
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_6.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            黑镜
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [英] 查利·布鲁克 / 安娜贝尔·琼斯
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_7.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            抓落叶
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [美]汤米·巴特勒
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_8.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            漫步八十年代
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            老葛
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_9.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            一千亿种生活
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [英] 蕾秋·乔伊斯
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_10.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            电影时代
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [美] 保琳·凯尔
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_1.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            散步的侵略者
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [日]前川知大
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_2.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            三十年战争史
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [英] 彼得·威尔逊
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_3.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            六十个故事
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [意] 迪诺·布扎蒂
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_4.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            诗人的思考
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            (美) 海伦·文德勒
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_5.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            项塔兰3
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [澳大利亚]格里高利·大卫·罗伯兹
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_6.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            黑镜
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [英] 查利·布鲁克 / 安娜贝尔·琼斯
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_7.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            抓落叶
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [美]汤米·巴特勒
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_8.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            漫步八十年代
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            老葛
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_9.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            一千亿种生活
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [英] 蕾秋·乔伊斯
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_10.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            电影时代
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [美] 保琳·凯尔
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_1.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            散步的侵略者
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [日]前川知大
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_2.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            三十年战争史
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [英] 彼得·威尔逊
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_3.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            六十个故事
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [意] 迪诺·布扎蒂
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_4.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            诗人的思考
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            (美) 海伦·文德勒
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_5.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            项塔兰3
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [澳大利亚]格里高利·大卫·罗伯兹
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_6.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            黑镜
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [英] 查利·布鲁克 / 安娜贝尔·琼斯
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_7.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            抓落叶
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [美]汤米·巴特勒
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_8.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            漫步八十年代
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            老葛
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_9.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            一千亿种生活
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [英] 蕾秋·乔伊斯
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_10.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            电影时代
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [美] 保琳·凯尔
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_1.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            散步的侵略者
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [日]前川知大
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_2.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            三十年战争史
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [英] 彼得·威尔逊
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_3.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            六十个故事
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [意] 迪诺·布扎蒂
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_4.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            诗人的思考
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            (美) 海伦·文德勒
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_5.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            项塔兰3
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [澳大利亚]格里高利·大卫·罗伯兹
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_6.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            黑镜
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [英] 查利·布鲁克 / 安娜贝尔·琼斯
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_7.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            抓落叶
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [美]汤米·巴特勒
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_8.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            漫步八十年代
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            老葛
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_9.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            一千亿种生活
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [英] 蕾秋·乔伊斯
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_10.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            电影时代
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [美] 保琳·凯尔
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_1.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            散步的侵略者
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [日]前川知大
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_2.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            三十年战争史
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [英] 彼得·威尔逊
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_3.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            六十个故事
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [意] 迪诺·布扎蒂
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_4.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            诗人的思考
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            (美) 海伦·文德勒
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_5.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            项塔兰3
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [澳大利亚]格里高利·大卫·罗伯兹
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_6.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            黑镜
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [英] 查利·布鲁克 / 安娜贝尔·琼斯
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_7.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            抓落叶
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [美]汤米·巴特勒
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_8.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            漫步八十年代
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            老葛
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_9.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            一千亿种生活
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [英] 蕾秋·乔伊斯
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_10.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            电影时代
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [美] 保琳·凯尔
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_1.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            散步的侵略者
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [日]前川知大
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_2.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            三十年战争史
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [英] 彼得·威尔逊
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_3.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            六十个故事
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [意] 迪诺·布扎蒂
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_4.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            诗人的思考
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            (美) 海伦·文德勒
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_5.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            项塔兰3
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [澳大利亚]格里高利·大卫·罗伯兹
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_6.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            黑镜
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [英] 查利·布鲁克 / 安娜贝尔·琼斯
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_7.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            抓落叶
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [美]汤米·巴特勒
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_8.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            漫步八十年代
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            老葛
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_9.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            一千亿种生活
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [英] 蕾秋·乔伊斯
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_10.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            电影时代
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [美] 保琳·凯尔
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_1.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            散步的侵略者
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [日]前川知大
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_2.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            三十年战争史
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [英] 彼得·威尔逊
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_3.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            六十个故事
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [意] 迪诺·布扎蒂
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_4.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            诗人的思考
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            (美) 海伦·文德勒
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_5.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            项塔兰3
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [澳大利亚]格里高利·大卫·罗伯兹
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_6.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            黑镜
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [英] 查利·布鲁克 / 安娜贝尔·琼斯
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_7.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            抓落叶
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [美]汤米·巴特勒
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_8.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            漫步八十年代
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            老葛
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_9.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            一千亿种生活
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [英] 蕾秋·乔伊斯
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_10.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            电影时代
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [美] 保琳·凯尔
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_1.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            散步的侵略者
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [日]前川知大
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_2.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            三十年战争史
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [英] 彼得·威尔逊
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_3.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            六十个故事
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [意] 迪诺·布扎蒂
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_4.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            诗人的思考
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            (美) 海伦·文德勒
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_5.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            项塔兰3
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [澳大利亚]格里高利·大卫·罗伯兹
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_6.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            黑镜
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [英] 查利·布鲁克 / 安娜贝尔·琼斯
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_7.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            抓落叶
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [美]汤米·巴特勒
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_8.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            漫步八十年代
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            老葛
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_9.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            一千亿种生活
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [英] 蕾秋·乔伊斯
+                        </p>
+                    </div>
+                </div>
+                <div class="card new-book-item">
+                    <a href="#">
+                        <img src="../static/img/book_img/book_10.jpg" class="card-img-top" alt="散步的侵略者">
+                    </a>
+                    <div class="card-body new-book-item-body">
+                        <a class="card-title new-book-item-title text-center" href="#">
+                            电影时代
+                        </a>
+                        <p class="card-text new-book-item-text">
+                            [美] 保琳·凯尔
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-main animate__animated animate__fadeIn">
+    <div class="container">
+        <div class="footer-header">
+            合作伙伴
+        </div>
+        <div class="friend-website">
+            <a href="#" class="friend-link">掌阅书城</a>
+        </div>
+        <div class="copy-right">
+            Copyright 2020 龙谷书城 All Rights Reserved.
+        </div>
+    </div>
+</div>
+
+    <script>
+
+        window.onload = function() {
+            $('.new-book-list').waterFall(52)
+        }
+
+        window.onresize = function() {
+            $('.new-book-list').waterFall(52)
+        }
+
+    </script>
+
+</body>
+</html>

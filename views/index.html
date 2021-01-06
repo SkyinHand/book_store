@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>龙谷阅读</title>
+    <script src="../static/plugins/jquery/jquery.min.js"></script>
+    <script src="../static/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../static/js/global.js"></script>
+    <link rel="stylesheet" href="../static/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/plugins/animate/animate.min.css">
+    <link rel="stylesheet" href="../static/css/global.css">
+    <link rel="stylesheet" href="../static/css/index.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light animate__animated animate__fadeIn" style="position: relative; z-index: 1500" id="logo-area">
+        <a class="navbar-brand text-white" href="./home.html"><img src="../static/img/other/logo.png" alt="龙谷阅读">龙谷阅读</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto" >
+                <li class="nav-item active">
+                    <a class="nav-link text-white" href="./browse.html">浏览图书</a>
+                </li>
+                <li class="nav-item dropdown" >
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        图书分类
+                    </a>
+                    <div class="dropdown-menu animate__animated animate__fadeIn" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">文学艺术</a>
+                        <a class="dropdown-item" href="#">青春文学</a>
+                        <a class="dropdown-item" href="#">励志经典</a>
+                        <a class="dropdown-item" href="#">历史形势</a>
+                        <a class="dropdown-item" href="#">社会科学</a>
+                        <a class="dropdown-item" href="#">旅游文化</a>
+                        <a class="dropdown-item" href="#">美食时尚</a>
+                        <a class="dropdown-item" href="#">少儿科学</a>
+                        <a class="dropdown-item" href="#">时事政治</a>
+                        <a class="dropdown-item" href="#">其他全部</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">图书排行</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">图书下载</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="./aboutus.html">关于本站</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" id="searchBox" type="search" placeholder="标题搜索" aria-label="Search">
+                <button class="btn btn-info my-2 my-sm-0" type="button" id="search">搜索</button>
+                <button class="btn btn-success my-2 my-sm-0 ml-3" type="button" id="loginRef">登录</button>
+            </form>
+        </div>
+    </nav>
+    <div class="animate__animated animate__fadeIn absolute-center" id="title">
+        <a href="./home.html" class="text-title" id="mainLink">书中自有黄金屋，书中自有颜如玉</a>
+    </div>
+<!-- 页脚部分 -->
+    <div class="footer-main animate__animated animate__fadeIn">
+        <div class="container">
+            <div class="footer-header">
+                合作伙伴
+            </div>
+            <div class="friend-website">
+                <a href="#" class="friend-link">掌阅书城</a>
+            </div>
+            <div class="copy-right">
+                Copyright 2020 龙谷书城 All Rights Reserved.
+            </div>
+        </div>
+    </div>
+</body>
+</html>

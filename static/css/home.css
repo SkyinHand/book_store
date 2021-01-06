@@ -1,0 +1,210 @@
+/* Main-Body CSS Style */
+
+.main-body {
+    min-width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    overflow: auto;
+}
+
+.header {
+    font-size: 18px;
+    color: #fff;
+}
+
+hr {
+    background-color: #ccc;
+    height: 1px;
+    border: none;
+}
+
+
+/* SideBar CSS Style */
+
+.sidebar {
+    min-width: 385px;
+    width: 28%;
+    height: 750px;
+    margin: 15px;
+    padding: 15px;
+    color: #fff;
+    border-radius: 3px;
+    background: rgba(55, 55, 55, 0.4);
+}
+
+.sidebar-item {}
+
+.sidebar-list {
+    list-style-type: none;
+    position: relative;
+    left: -25px;
+}
+
+.sidebar-list-item {
+    overflow: hidden;
+    transition: 0.3s;
+    padding: 10px 0;
+    border-radius: 3px;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.6);
+}
+
+.sidebar-list-item:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.sidebar-list-item>span {
+    float: left;
+    width: 20px;
+    text-align: center;
+}
+
+.list-item {
+    float: left;
+    margin-left: 5px;
+    width: 210px;
+}
+
+.title {
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 210px;
+}
+
+.title:hover {
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+}
+
+.author {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 12px;
+    min-height: 19px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 210px;
+}
+
+.buy-link {
+    float: right;
+    text-decoration: none;
+}
+
+.buy-link:hover {
+    text-decoration: none;
+}
+
+.buy-button {
+    position: relative;
+    top: 12px;
+    right: 5px;
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px solid #f3f3f3;
+    color: #fff;
+    transition: 0.2s;
+}
+
+.buy-button:hover {
+    background: #fff;
+    box-shadow: 0 0 10px #fff;
+    color: #000;
+}
+
+
+/* Main CSS Style */
+
+.main {
+    /*background: rgba(55, 55, 55, 0.4);*/
+    width: 67%;
+    min-width: 690px;
+    /* float: left; */
+}
+
+
+/* BookStore CSS Style */
+
+.book-first-item {
+    height: 172px;
+}
+
+.book-first-item>a>img {
+    width: 130px;
+    height: 172px;
+    float: left;
+}
+
+.other-book {
+    display: flex;
+    justify-content: space-around;
+}
+
+.other-book>.book-item>a>img {
+    width: 106px;
+    height: 140px;
+    margin-top: 10px;
+    float: left;
+    position: relative;
+    left: 15px;
+}
+
+.other-book>.book-item {
+    width: 136px;
+    float: left;
+}
+
+.other-book>.book-item>.bookstore-info {
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+.other-book>.book-item>.bookstore-info>div:nth-child(1) {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 135px;
+}
+
+.book-first-item>.bookstore-info {
+    margin: 15px;
+}
+
+.bookstore-info {
+    float: left;
+    color: #333;
+    transition: 0.2s;
+    font-size: 13px;
+    ;
+}
+
+.bookstore-info:hover {
+    color: #bbb;
+    cursor: pointer;
+}
+
+.book-first-item>.bookstore-info>span:nth-child(1) {
+    font-size: 23px;
+}
+
+.book-first-item>.bookstore-info>span:nth-child(2) {
+    font-size: 20px;
+    color: #E76648;
+    margin-left: 17px;
+}
+
+.book-first-item>.bookstore-info>span:nth-child(3) {
+    font-size: 14px;
+    color: #E76648;
+    position: relative;
+    top: -1px;
+}
+
+.book-first-item>div {
+    margin-top: 15px;
+    font-size: 16px;
+}

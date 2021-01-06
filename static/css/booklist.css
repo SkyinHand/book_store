@@ -1,0 +1,39 @@
+.main {
+    /*background: rgba(55, 55, 55, 0.4);*/
+    margin: 15px;
+    padding: 15px;
+    border-radius: 3px;
+    background: rgba(55, 55, 55, 0.4);
+    overflow: hidden;
+}
+
+.new-book-list {
+    position: relative;
+
+}
+.new-book-item {
+    float: left;
+    width: 135px;
+    margin: 10px 20px;
+    text-align: center;
+    position: absolute;
+    transition: 0.2s;
+}
+.new-book-item:hover {
+    box-shadow: 0 0 10px #fff;
+}
+.new-book-item-title {
+    font-size: 14px;
+    color: #333;
+}
+.new-book-item-title:hover {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.35);
+}
+.new-book-item-body {
+    margin: auto 0;
+}
+.new-book-item-text {
+    font-size: 13px;
+    color: #333;
+}
