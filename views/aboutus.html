@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="../static/plugins/animate/animate.min.css">
     <link rel="stylesheet" href="../static/css/global.css">
 	<link rel="stylesheet" href="../static/css/footer.css">
-    <link rel="stylesheet" href="../static/css/aboutus.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light animate__animated animate__fadeIn" style="position: relative; z-index: 1500" id="logo-area">
@@ -74,32 +73,45 @@
         </form>
     </div>
 </nav>
-    <div id="about-us-main" class="container animate__animated animate__fadeIn mt-4 mb-4 p-4">
+    <div class="container animate__animated animate__fadeInLeft mt-4 mb-4 p-4 dragon-container">
+        <div class="card">
+            <div class="card-body">
+                <div class="class-title text-center">
+                    联系我们
+                </div>
+                <p class="text-muted">姓名：黄海</p>
+                <p class="text-muted">学号：19110573083</p>
+                <p class="text-muted">电子邮件：1548940268@qq.com</p>
+                <p class="text-muted">QQ：1548940268</p>
+            </div>
+        </div>
+    </div>
+    <div class="container animate__animated animate__fadeIn mt-4 mb-4 p-4 dragon-container">
 		<div class="card">
 			<div class="card-body">
-				<div class="card-title text-center text-danger">
-					联系我们，填写以下信息<span class="text-primary">&nbsp;*选填</span>
+				<div class="card-title text-center text-muted">
+					调查问卷，填写以下信息<span class="text-danger">&nbsp;*<span class="text-primary">选填</span></span>
 				</div>
 				<form>
                     <div class="form-group">
-                        <label for="cont-username" class="text-primary">姓名：</label>
+                        <label for="cont-username" class="text-muted">姓名：</label>
                         <input type="text" class="form-control" id="cont-username"/>
                     </div>
 					<div class="form-group">
-                        <label for="cont-idcard" class="text-primary">学生证：</label>
+                        <label for="cont-idcard" class="text-muted">学生证：</label>
                         <input type="text" class="form-control" id="cont-idcard"/>
                     </div>
                     <div class="form-group">
-                        <label for="cont-email" class="text-primary">邮箱：</label>
+                        <label for="cont-email" class="text-muted">邮箱：</label>
                         <input type="email" class="form-control" id="cont-email"/>
                     </div>
                     <div class="form-group">
-                        <label for="cont-phone" class="text-primary">手机<span class="text-danger">*</span>：</label>
+                        <label for="cont-phone" class="text-muted">手机<span class="text-danger">*</span>：</label>
                         <input type="text" class="form-control" id="cont-phone"/>
                     </div>
                     <div class="form-group">
-                        <label for="cont-info" class="text-primary">附加信息<span class="text-danger">*</span>：</label>
-                        <textarea class="form-control" id="cont-info" rows="3"></textarea>
+                        <label for="cont-info" class="text-muted">附加信息<span class="text-danger">*</span>：</label>
+                        <textarea class="form-control" placeholder="对于本网站，您有什么建议呢?" id="cont-info" rows="3"></textarea>
                     </div>
                     <div class="form-group d-flex justify-content-around">
                         <button type="button" class="btn btn-outline-primary w-45" id="submit-advice-button">提交</button>

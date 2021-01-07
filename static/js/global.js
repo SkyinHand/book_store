@@ -1,6 +1,6 @@
 let database = {
-    'max-book': 10,
-    '1': {
+    'counts': 10,
+    'data': [{
         'id': '1',
         'title': '散步的侵略者',
         'author': '前川知大',
@@ -8,8 +8,7 @@ let database = {
         'price': 34,
         'count': 127,
         'cover': '../static/img/book_img/book_1.jpg'
-    },
-    '2': {
+    },{
         'id': '2',
         'title': '三十年战争史',
         'author': '彼得·威尔逊',
@@ -17,8 +16,7 @@ let database = {
         'price': 44,
         'count': 107,
         'cover': '../static/img/book_img/book_2.jpg'
-    },
-    '3': {
+    },{
         'id': '3',
         'title': '六十个故事',
         'author': '迪诺·布扎蒂',
@@ -26,8 +24,7 @@ let database = {
         'price': 41,
         'count': 137,
         'cover': '../static/img/book_img/book_3.jpg'
-    },
-    '4': {
+    },{
         'id': '4',
         'title': '诗人的思考',
         'author': '海伦·文德勒',
@@ -35,8 +32,7 @@ let database = {
         'price': 48,
         'count': 187,
         'cover': '../static/img/book_img/book_4.jpg'
-    },
-    '5': {
+    },{
         'id': '5',
         'title': '项塔兰3',
         'author': '格里高利·大卫·罗伯兹',
@@ -44,17 +40,15 @@ let database = {
         'price': 34,
         'count': 47,
         'cover': '../static/img/book_img/book_5.jpg'
-    },
-    '6': {
+    },{
         'id': '6',
-        'title': '黑镜',
-        'author': '查利·布鲁克 / 安娜贝尔·琼斯',
-        'country': '英',
+        'title': '隋唐世界帝国的形成',
+        'author': '谷川道雄',
+        'country': '日',
         'price': 54,
         'count': 507,
         'cover': '../static/img/book_img/book_6.jpg'
-    },
-    '7': {
+    },{
         'id': '7',
         'title': '抓落叶',
         'author': '汤米·巴特勒',
@@ -62,8 +56,7 @@ let database = {
         'price': 64,
         'count': 167,
         'cover': '../static/img/book_img/book_7.jpg'
-    },
-    '8': {
+    },{
         'id': '8',
         'title': '漫步八十年代',
         'author': '老葛',
@@ -71,8 +64,7 @@ let database = {
         'price': 84,
         'count': 187,
         'cover': '../static/img/book_img/book_8.jpg'
-    },
-    '9': {
+    },{
         'id': '9',
         'title': '一千亿种生活',
         'author': '蕾秋·乔伊斯',
@@ -80,8 +72,7 @@ let database = {
         'price': 34,
         'count': 77,
         'cover': '../static/img/book_img/book_9.jpg'
-    },
-    '10': {
+    },{
         'id': '10',
         'title': '电影时代',
         'author': '保琳·凯尔',
@@ -89,7 +80,7 @@ let database = {
         'price': 69,
         'count': 3,
         'cover': '../static/img/book_img/book_10.jpg'
-    },
+    }]
 };
 
 Date.prototype.Format = function (fmt) { // author: meizz
@@ -124,7 +115,6 @@ $('document').ready(function() {
     let searchMap = { 1 : 'id', 2 : 'title', 3: 'author', 4: 'country' };
     let currentSearchIndex = 1;
 
-
     // 将当前数据存储到Storage中，如果一开始没有赋值，则赋予初值，否则不赋予
     if(window.localStorage.getItem("database") === null) {
         window.localStorage.setItem("database", JSON.stringify(database));
@@ -136,6 +126,8 @@ $('document').ready(function() {
     setInterval(function() {
         $('#p-time').html(`当前时间：${new Date().Format('yyyy-MM-dd HH:mm:ss')}`);
     }, 1000);
+
+    // =============== 全局点击事件 ===============
 
     $('#search').click(function() {
         let searchContent = $('#searchBox').val();
