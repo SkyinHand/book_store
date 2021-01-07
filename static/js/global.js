@@ -246,14 +246,6 @@ $('document').ready(function() {
     if(window.localStorage.getItem("database") === null) {
         window.localStorage.setItem("database", JSON.stringify(database));
     }
-
-    // 获取当前时间并重新设置时间到导航栏
-    $('#p-time').html(`当前时间：${new Date().Format('yyyy-MM-dd HH:mm:ss')}`);
-
-    setInterval(function() {
-        $('#p-time').html(`当前时间：${new Date().Format('yyyy-MM-dd HH:mm:ss')}`);
-    }, 1000);
-
     // ============== 获取body ================
 
     let body = $('body');
@@ -333,6 +325,13 @@ $('document').ready(function() {
             </div>
         </div>
     </div>`)
+
+    // 获取当前时间并重新设置时间到导航栏
+    $('#p-time').html(`当前时间：${new Date().Format('yyyy-MM-dd HH:mm:ss')}`);
+
+    setInterval(function() {
+        $('#p-time').html(`当前时间：${new Date().Format('yyyy-MM-dd HH:mm:ss')}`);
+    }, 1000);
 
     // ============== 为BookList添加元素 ====================
 
