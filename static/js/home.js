@@ -28,6 +28,6 @@ $(function () {
 
 
     $('.bookstore-info').click(function () {
-        window.location.href = './detailbook.html?id=21';
+        window.location.href = './bookdetail.html?id=21';
     })
 })
