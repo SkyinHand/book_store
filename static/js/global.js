@@ -1,5 +1,4 @@
 let database = {
-    'counts': 10,
     'data': [{
         'id': '1',
         'title': '散步的侵略者',
@@ -80,6 +79,134 @@ let database = {
         'price': 69,
         'count': 3,
         'cover': '../static/img/book_img/book_10.jpg'
+    },{
+        'id': '11',
+        'title': '你就是孩子最好的玩具',
+        'author': '金伯莉·布雷恩',
+        'country': 'U',
+        'price': 29.8,
+        'count': 37,
+        'cover': '../static/img/book_img/book_11.jpg'
+    },{
+        'id': '12',
+        'title': '钝感力',
+        'author': '渡边淳一',
+        'country': '日',
+        'price': 15,
+        'count': 507,
+        'cover': '../static/img/book_img/book_12.jpg'
+    },{
+        'id': '13',
+        'title': '你当像鸟飞往你的山',
+        'author': '塔拉·韦斯特弗',
+        'country': '美',
+        'price': 59,
+        'count': 437,
+        'cover': '../static/img/book_img/book_13.jpg'
+    },{
+        'id': '14',
+        'title': '人间失格',
+        'author': '太宰治',
+        'country': '日',
+        'price': 16,
+        'count': 4370,
+        'cover': '../static/img/book_img/book_14.jpg'
+    },{
+        'id': '15',
+        'title': '正面管教',
+        'author': '简·尼尔森 (Jane Nelsen)',
+        'country': '美',
+        'price': 29,
+        'count': 276,
+        'cover': '../static/img/book_img/book_15.jpg'
+    },{
+        'id': '16',
+        'title': '人生海海',
+        'author': '麦家',
+        'country': '中',
+        'price': 55,
+        'count': 345,
+        'cover': '../static/img/book_img/book_16.jpg'
+    },{
+        'id': '17',
+        'title': '小熊和最好的爸爸（全7册）',
+        'author': '阿兰德·丹姆 文 / 亚历克斯·沃尔弗 图',
+        'country': 'U',
+        'price': 35,
+        'count': 156,
+        'cover': '../static/img/book_img/book_17.jpg'
+    },{
+        'id': '18',
+        'title': '乌合之众',
+        'author': '勒庞',
+        'country': '法',
+        'price': 16,
+        'count': 186,
+        'cover': '../static/img/book_img/book_18.jpg'
+    },{
+        'id': '19',
+        'title': '张嘉骅少年读经典系列',
+        'author': 'U',
+        'country': 'U',
+        'price': 116,
+        'count': 186,
+        'cover': '../static/img/book_img/book_19.jpg'
+    },{
+        'id': '20',
+        'title': '中华人民共和国民法典：实用版',
+        'author': 'U',
+        'country': '中',
+        'price': 65,
+        'count': 1000,
+        'cover': '../static/img/book_img/book_20.jpg'
+    },{
+        'id': '21',
+        'title': '明智的孩子',
+        'author': '安吉拉·卡特（Angela Carter）',
+        'country': '英',
+        'price': 26,
+        'count': 368,
+        'cover': '../static/img/book_img/book_21.png'
+    },{
+        'id': '22',
+        'title': '乔乔的奇妙冒险',
+        'author': '荒木飞吕彦',
+        'country': '日',
+        'price': 125,
+        'count': 944,
+        'cover': '../static/img/book_img/book_22.png'
+    },{
+        'id': '23',
+        'title': '平行宇宙的艺术',
+        'author': '詹姆斯·西西利亚诺 | James Siciliano / 贾斯汀·罗兰 | Justin Roiland',
+        'country': '美',
+        'price': 168,
+        'count': 224,
+        'cover': '../static/img/book_img/book_23.png'
+    },{
+        'id': '24',
+        'title': '冯至译文全集',
+        'author': '歌德、海涅、里尔克等著',
+        'country': '德·奥地利',
+        'price': 428,
+        'count': 224,
+        'cover': '../static/img/book_img/book_24.png'
+    },{
+        'id': '25',
+        'title': '碎片',
+        'author': '埃莱娜·费兰特',
+        'country': '意',
+        'price': 69,
+        'count': 376,
+        'cover': '../static/img/book_img/book_25.png'
+    },{
+        'id': '26',
+        'title': '刘勃历史三部曲',
+        'author': '刘勃',
+        'country': '中',
+        'price': 38,
+        'count': 326,
+        'cover': '../static/img/book_img/book_26.png'
     }]
 };
 
@@ -126,6 +253,24 @@ $('document').ready(function() {
     setInterval(function() {
         $('#p-time').html(`当前时间：${new Date().Format('yyyy-MM-dd HH:mm:ss')}`);
     }, 1000);
+
+    // ============== 为BookList添加元素 ====================
+
+    for(let i = 0; i < database['data'].length; i++) {
+        $('.new-book-list').append(`<div class="card new-book-item" book-id = "${database['data'][i]['id']}">
+                        <a href="#">
+                            <img src="${database['data'][i]['cover']}" class="card-img-top" alt="${database['data'][i]['title']}">
+                        </a>
+                        <div class="card-body new-book-item-body">
+                            <a class="card-title new-book-item-title text-center" href="#">
+                                ${database['data'][i]['title']}
+                            </a>
+                            <p class="card-text new-book-item-text">
+                                [${database['data'][i]['country']}]${database['data'][i]['author']}
+                            </p>
+                        </div>
+                    </div>`)
+    }
 
     // =============== 全局点击事件 ===============
 

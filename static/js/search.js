@@ -27,4 +27,8 @@ $(function () {
             break;
         }
     }
+    if(currentIndex <= 10) {
+        $('.footer-main').addClass( 'absolute-bottom');
+        $('#table-container').addClass('absolute-center');
+    }
 })
