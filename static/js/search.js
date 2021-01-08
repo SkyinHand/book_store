@@ -27,7 +27,7 @@ $(function () {
             break;
         }
     }
-    if(currentIndex <= 10) {
+    if(currentIndex <= 8) {
         $('.footer-main').addClass( 'absolute-bottom');
         $('#table-container').addClass('absolute-center');
     }

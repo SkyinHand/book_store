@@ -30,4 +30,25 @@ $(function () {
     $('.bookstore-info').click(function () {
         window.location.href = './bookdetail.html?id=21';
     })
+
+    window.onload = function() {
+        $('.new-book-list').waterFall(25)
+    }
+
+    window.onresize = function() {
+        $('.new-book-list').waterFall(25)
+        let cWith;
+        if ($(window).width() <= 1218) {
+            cWith = 1218
+        } else {
+            cWith = '100%'
+        }
+        $('#logo-area').css({
+            width: cWith
+        })
+        $('.footer-main').css({
+            width: cWith
+        })
+    }
+
 })

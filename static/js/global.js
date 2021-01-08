@@ -238,7 +238,7 @@ function getQueryString(variable)
     return null;
 }
 
-$('document').ready(function() {
+$(function() {
     let searchMap = { 1 : 'id', 2 : 'title', 3: 'author', 4: 'country' };
     let currentSearchIndex = 1;
 
@@ -318,7 +318,7 @@ $('document').ready(function() {
                 合作伙伴
             </div>
             <div class="friend-website">
-                <a href="#" class="friend-link">掌阅书城</a>
+                <a href="http://www.ireader.com/" class="friend-link">掌阅书城</a>
             </div>
             <div class="copy-right">
                 Copyright 2020 龙谷书城 All Rights Reserved.
